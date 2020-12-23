@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReasturantChainFrameVC" customModule="myRSDK" customModuleProvider="target">
+            <connections>
+                <outlet property="areaButton" destination="3GR-8L-BqY" id="6bb-iD-7BT"/>
+                <outlet property="areaLabel" destination="lak-lX-2dE" id="vFI-fs-DeO"/>
+                <outlet property="chainTableView" destination="vmu-lS-Dmq" id="yEt-4U-MXq"/>
+                <outlet property="downImage" destination="rnB-vZ-E2I" id="rlO-LB-O4K"/>
+                <outlet property="subView" destination="oNg-zO-MJz" id="60r-UV-ELe"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vmu-lS-Dmq">
+                    <rect key="frame" x="0.0" y="106" width="375" height="561"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="pnj-ck-3mk"/>
+                        <outlet property="delegate" destination="-1" id="ot0-N3-MpC"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wex-Ar-JtV">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="106"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oNg-zO-MJz">
+                            <rect key="frame" x="25" y="40" width="325" height="46"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Area" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lak-lX-2dE" customClass="LabelFont" customModule="MyRes" customModuleProvider="target">
+                                    <rect key="frame" x="10" y="11.5" width="265" height="23"/>
+                                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="19"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="FontSize">
+                                            <real key="value" value="19"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowtriangle.down.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="rnB-vZ-E2I">
+                                    <rect key="frame" x="285" y="12.5" width="25" height="21"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="25" id="CXQ-pF-A4a"/>
+                                        <constraint firstAttribute="width" constant="25" id="RLA-z0-JCR"/>
+                                    </constraints>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3GR-8L-BqY">
+                                    <rect key="frame" x="0.0" y="0.0" width="325" height="46"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <connections>
+                                        <action selector="dorpDownAction:" destination="-1" eventType="touchUpInside" id="c9U-rW-0ps"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" name="OrangeColor"/>
+                            <constraints>
+                                <constraint firstItem="3GR-8L-BqY" firstAttribute="top" secondItem="oNg-zO-MJz" secondAttribute="top" id="WV9-3i-1nA"/>
+                                <constraint firstAttribute="trailing" secondItem="3GR-8L-BqY" secondAttribute="trailing" id="c9z-sg-lGC"/>
+                                <constraint firstItem="lak-lX-2dE" firstAttribute="leading" secondItem="oNg-zO-MJz" secondAttribute="leading" constant="10" id="d44-i7-ZNo"/>
+                                <constraint firstItem="rnB-vZ-E2I" firstAttribute="leading" secondItem="lak-lX-2dE" secondAttribute="trailing" constant="10" id="gEG-79-ZAU"/>
+                                <constraint firstItem="rnB-vZ-E2I" firstAttribute="centerY" secondItem="oNg-zO-MJz" secondAttribute="centerY" id="inL-4n-oqM"/>
+                                <constraint firstItem="3GR-8L-BqY" firstAttribute="leading" secondItem="oNg-zO-MJz" secondAttribute="leading" id="lMc-iW-e6Z"/>
+                                <constraint firstAttribute="trailing" secondItem="rnB-vZ-E2I" secondAttribute="trailing" constant="15" id="qqN-Vt-KAm"/>
+                                <constraint firstAttribute="height" constant="46" id="s28-ax-NPt"/>
+                                <constraint firstItem="lak-lX-2dE" firstAttribute="centerY" secondItem="oNg-zO-MJz" secondAttribute="centerY" id="vNh-13-09b"/>
+                                <constraint firstAttribute="bottom" secondItem="3GR-8L-BqY" secondAttribute="bottom" id="vWm-7d-ffi"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="BorderColor">
+                                    <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="CornerRaduis">
+                                    <real key="value" value="23"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" name="GreenColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="oNg-zO-MJz" secondAttribute="trailing" constant="25" id="0eC-dt-Y6D"/>
+                        <constraint firstItem="oNg-zO-MJz" firstAttribute="leading" secondItem="wex-Ar-JtV" secondAttribute="leading" constant="25" id="XBh-o3-FFP"/>
+                        <constraint firstAttribute="bottom" secondItem="oNg-zO-MJz" secondAttribute="bottom" constant="20" id="foa-rE-BHj"/>
+                        <constraint firstItem="oNg-zO-MJz" firstAttribute="top" secondItem="wex-Ar-JtV" secondAttribute="top" constant="40" id="p68-2b-LeK"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="wex-Ar-JtV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="4iV-pO-3LV"/>
+                <constraint firstItem="wex-Ar-JtV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="9bB-uW-cM6"/>
+                <constraint firstItem="vmu-lS-Dmq" firstAttribute="top" secondItem="wex-Ar-JtV" secondAttribute="bottom" id="9ga-XE-1jJ"/>
+                <constraint firstItem="vmu-lS-Dmq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="OiY-qN-KTF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="vmu-lS-Dmq" secondAttribute="bottom" id="RB4-oT-p3X"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vmu-lS-Dmq" secondAttribute="trailing" id="YtR-Ek-v7l"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wex-Ar-JtV" secondAttribute="trailing" id="oUa-v5-KcO"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="132" y="119"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrowtriangle.down.fill" catalog="system" width="64" height="62"/>
+        <namedColor name="GreenColor">
+            <color red="0.42352941176470588" green="0.74117647058823533" blue="0.27058823529411763" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="OrangeColor">
+            <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeCell" id="gTV-IL-0wX" customClass="HomeCell" customModule="Prego" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="314" height="434"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="314" height="434"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="18v-Aq-95h">
+                        <rect key="frame" x="0.0" y="0.0" width="314" height="434"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cN3-7A-0aV">
+                                <rect key="frame" x="0.0" y="0.0" width="314" height="434"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cN3-7A-0aV" firstAttribute="top" secondItem="18v-Aq-95h" secondAttribute="top" id="H7G-5V-FEV"/>
+                            <constraint firstItem="cN3-7A-0aV" firstAttribute="leading" secondItem="18v-Aq-95h" secondAttribute="leading" id="OFj-EQ-BOv"/>
+                            <constraint firstAttribute="bottom" secondItem="cN3-7A-0aV" secondAttribute="bottom" id="fZl-yS-Vy7"/>
+                            <constraint firstAttribute="trailing" secondItem="cN3-7A-0aV" secondAttribute="trailing" id="hlJ-6S-FV9"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="18v-Aq-95h" secondAttribute="bottom" id="Ov8-GM-yuf"/>
+                <constraint firstAttribute="trailing" secondItem="18v-Aq-95h" secondAttribute="trailing" id="Qqx-uN-gNi"/>
+                <constraint firstItem="18v-Aq-95h" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="yK2-qc-nob"/>
+                <constraint firstItem="18v-Aq-95h" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="z7X-HU-ZBZ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="314" height="434"/>
+            <connections>
+                <outlet property="imageView" destination="cN3-7A-0aV" id="WFU-3W-MLG"/>
+            </connections>
+            <point key="canvasLocation" x="124" y="244"/>
+        </collectionViewCell>
+    </objects>
+</document>

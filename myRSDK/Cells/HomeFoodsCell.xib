@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Segoe UI Bold.ttf">
+            <string>SegoeUI-Bold</string>
+        </array>
+        <array key="Segoe UI.ttf">
+            <string>SegoeUI</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeFoodsCell" id="gTV-IL-0wX" customClass="HomeFoodsCell" customModule="MyRes" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="342" height="265"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="342" height="265"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TIi-gq-oEX">
+                        <rect key="frame" x="0.0" y="0.0" width="342" height="265"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="second.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="xv0-sk-49Q">
+                                <rect key="frame" x="0.0" y="0.0" width="342" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="xgf-sE-GaE"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Grilled Kofta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pL6-hs-RaT" customClass="LabelFont" customModule="MyRes" customModuleProvider="target">
+                                <rect key="frame" x="10" y="195" width="252" height="24"/>
+                                <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="FontSize">
+                                        <real key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Kofta (5PCs), rice, tehina salad or thomia, breadKofta (5PCs), rice, tehina " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Obt-lj-ohQ" customClass="LabelFont" customModule="MyRes" customModuleProvider="target">
+                                <rect key="frame" x="10" y="229" width="322" height="20"/>
+                                <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="15"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="200 L.E" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="KCb-rs-Ogm" customClass="LabelFont" customModule="MyRes" customModuleProvider="target">
+                                <rect key="frame" x="272" y="197.5" width="60" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="XWL-Xx-MTz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SegoeUI-Bold" family="Segoe UI" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="FontSize">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="BackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xv0-sk-49Q" firstAttribute="top" secondItem="TIi-gq-oEX" secondAttribute="top" id="1eX-9h-cYB"/>
+                            <constraint firstItem="pL6-hs-RaT" firstAttribute="leading" secondItem="TIi-gq-oEX" secondAttribute="leading" constant="10" id="FDN-UH-DmG"/>
+                            <constraint firstAttribute="trailing" secondItem="Obt-lj-ohQ" secondAttribute="trailing" constant="10" id="M5g-SL-HQl"/>
+                            <constraint firstItem="Obt-lj-ohQ" firstAttribute="leading" secondItem="pL6-hs-RaT" secondAttribute="leading" id="NOK-VH-FJ8"/>
+                            <constraint firstItem="Obt-lj-ohQ" firstAttribute="top" secondItem="pL6-hs-RaT" secondAttribute="bottom" constant="10" id="Oah-9l-eR1"/>
+                            <constraint firstItem="KCb-rs-Ogm" firstAttribute="leading" secondItem="pL6-hs-RaT" secondAttribute="trailing" constant="10" id="S8y-dD-fN0"/>
+                            <constraint firstAttribute="trailing" secondItem="xv0-sk-49Q" secondAttribute="trailing" id="SwX-HU-jwS"/>
+                            <constraint firstAttribute="trailing" secondItem="KCb-rs-Ogm" secondAttribute="trailing" constant="10" id="Yfl-fc-Qyd"/>
+                            <constraint firstItem="pL6-hs-RaT" firstAttribute="top" secondItem="xv0-sk-49Q" secondAttribute="bottom" constant="15" id="cFS-J9-hr6"/>
+                            <constraint firstAttribute="bottom" secondItem="Obt-lj-ohQ" secondAttribute="bottom" constant="16" id="cKy-jn-F36"/>
+                            <constraint firstItem="KCb-rs-Ogm" firstAttribute="centerY" secondItem="pL6-hs-RaT" secondAttribute="centerY" id="iia-bj-y7g"/>
+                            <constraint firstItem="xv0-sk-49Q" firstAttribute="leading" secondItem="TIi-gq-oEX" secondAttribute="leading" id="kUU-hd-cmR"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="TIi-gq-oEX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="BmA-gb-8qb"/>
+                <constraint firstAttribute="bottom" secondItem="TIi-gq-oEX" secondAttribute="bottom" id="DRi-Os-m5D"/>
+                <constraint firstItem="TIi-gq-oEX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="GY9-vw-hEb"/>
+                <constraint firstAttribute="trailing" secondItem="TIi-gq-oEX" secondAttribute="trailing" id="sCC-s0-jA3"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="342" height="265"/>
+            <connections>
+                <outlet property="detailsLabel" destination="Obt-lj-ohQ" id="5Qd-qU-fa4"/>
+                <outlet property="mImageView" destination="xv0-sk-49Q" id="jZf-AO-dsG"/>
+                <outlet property="mView" destination="TIi-gq-oEX" id="Cpo-PJ-ikI"/>
+                <outlet property="priceLabel" destination="KCb-rs-Ogm" id="cnh-dE-XfK"/>
+                <outlet property="titleLabel" destination="pL6-hs-RaT" id="hzG-G2-3Za"/>
+            </connections>
+            <point key="canvasLocation" x="205.79710144927537" y="133.59375"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="second.jpg" width="1000" height="667"/>
+        <namedColor name="BackgroundColor">
+            <color red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Segoe UI Bold.ttf">
+            <string>SegoeUI-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FavoritesFrameVC" customModule="myRSDK" customModuleProvider="target">
+            <connections>
+                <outlet property="bagView" destination="pBI-UM-UcJ" id="iyC-NH-xQu"/>
+                <outlet property="mCollection" destination="cy8-hb-UgO" id="jTG-7n-Qzq"/>
+                <outlet property="mView" destination="N2Y-0F-LQY" id="CPh-uO-SmB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="npv-Ts-GuQ">
+                    <rect key="frame" x="0.0" y="44" width="414" height="60"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="igl-Fc-Blx">
+                            <rect key="frame" x="14" y="10" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Jug-Wu-7Yz"/>
+                                <constraint firstAttribute="width" constant="40" id="n1i-Kx-saP"/>
+                            </constraints>
+                            <state key="normal" image="back"/>
+                            <connections>
+                                <action selector="dismissAction:" destination="-1" eventType="touchUpInside" id="t41-1i-9tr"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorite" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ut-RP-3XU" customClass="LabelFont" customModule="myRSDK" customModuleProvider="target">
+                            <rect key="frame" x="69" y="16" width="86.5" height="28"/>
+                            <fontDescription key="fontDescription" name="SegoeUI-Bold" family="Segoe UI" pointSize="24"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="FontSize">
+                                    <real key="value" value="24"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pBI-UM-UcJ">
+                            <rect key="frame" x="354" y="10" width="50" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Sdr-vE-2Xi"/>
+                                <constraint firstAttribute="width" constant="50" id="a5q-1M-SOl"/>
+                            </constraints>
+                        </containerView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="0Ut-RP-3XU" firstAttribute="leading" secondItem="igl-Fc-Blx" secondAttribute="trailing" constant="15" id="6dK-fB-GMo"/>
+                        <constraint firstItem="igl-Fc-Blx" firstAttribute="leading" secondItem="npv-Ts-GuQ" secondAttribute="leading" constant="14" id="UUU-B6-aiA"/>
+                        <constraint firstAttribute="trailing" secondItem="pBI-UM-UcJ" secondAttribute="trailing" constant="10" id="YwH-Ij-YF4"/>
+                        <constraint firstItem="igl-Fc-Blx" firstAttribute="centerY" secondItem="npv-Ts-GuQ" secondAttribute="centerY" id="cLa-LM-edC"/>
+                        <constraint firstAttribute="height" constant="60" id="fhY-4g-TNI"/>
+                        <constraint firstItem="pBI-UM-UcJ" firstAttribute="centerY" secondItem="npv-Ts-GuQ" secondAttribute="centerY" id="gVC-z0-64f"/>
+                        <constraint firstItem="0Ut-RP-3XU" firstAttribute="centerY" secondItem="igl-Fc-Blx" secondAttribute="centerY" id="uDt-Lt-tEe"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N2Y-0F-LQY">
+                    <rect key="frame" x="0.0" y="104" width="414" height="758"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="cy8-hb-UgO">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="758"/>
+                            <color key="backgroundColor" name="BackgroundColor"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="TXa-Vy-jOc">
+                                <size key="itemSize" width="50" height="50"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                            <cells>
+                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="FxT-kO-JaW">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </view>
+                                </collectionViewCell>
+                            </cells>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="G87-pH-Iaf"/>
+                                <outlet property="delegate" destination="-1" id="ElU-FF-eWL"/>
+                            </connections>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="cy8-hb-UgO" secondAttribute="trailing" id="JaD-2A-TXC"/>
+                        <constraint firstItem="cy8-hb-UgO" firstAttribute="leading" secondItem="N2Y-0F-LQY" secondAttribute="leading" id="Nfk-wd-eKf"/>
+                        <constraint firstAttribute="bottom" secondItem="cy8-hb-UgO" secondAttribute="bottom" id="XUM-uI-96h"/>
+                        <constraint firstItem="cy8-hb-UgO" firstAttribute="top" secondItem="N2Y-0F-LQY" secondAttribute="top" id="ocq-gI-mhJ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" name="BackgroundColor"/>
+            <constraints>
+                <constraint firstItem="npv-Ts-GuQ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Vmt-fb-h9U"/>
+                <constraint firstItem="npv-Ts-GuQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="fW3-et-CYE"/>
+                <constraint firstItem="N2Y-0F-LQY" firstAttribute="top" secondItem="npv-Ts-GuQ" secondAttribute="bottom" id="oKH-TA-v1I"/>
+                <constraint firstItem="N2Y-0F-LQY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="oQB-7r-rm0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="npv-Ts-GuQ" secondAttribute="trailing" id="s1H-e5-T8w"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="N2Y-0F-LQY" secondAttribute="bottom" id="scv-pl-GmF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="N2Y-0F-LQY" secondAttribute="trailing" id="scz-x1-4qJ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="132" y="115"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back" width="30" height="31"/>
+        <namedColor name="BackgroundColor">
+            <color red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

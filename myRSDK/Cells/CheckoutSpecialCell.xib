@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+        <array key="Segoe UI.ttf">
+            <string>SegoeUI</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="281" id="KGk-i7-Jjw" customClass="CheckoutSpecialCell" customModule="Lepacha" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="281"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="281"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hlF-Pa-EFR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="281"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Special request ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BrR-z2-JeN" customClass="LabelFont" customModule="Lepacha" customModuleProvider="target">
+                                <rect key="frame" x="15" y="10" width="140" height="38.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38.5" id="DQv-xM-4fa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="FontSize">
+                                        <real key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(optional)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hb4-lP-KGt" customClass="LabelFont" customModule="Lepacha" customModuleProvider="target">
+                                <rect key="frame" x="159" y="21" width="58" height="16.5"/>
+                                <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="FontSize">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="C1A-QR-PBs">
+                                <rect key="frame" x="15" y="63.5" width="290" height="100"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Kes-ds-3a5"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="2" minimumInteritemSpacing="2" id="0Vd-39-xl6">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Request" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="izD-Qr-vRl">
+                                <rect key="frame" x="15" y="178.5" width="290" height="90.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90.5" id="hs9-qn-8nw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" name="BackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="C1A-QR-PBs" firstAttribute="top" secondItem="BrR-z2-JeN" secondAttribute="bottom" constant="15" id="7HO-rG-1KZ"/>
+                            <constraint firstItem="izD-Qr-vRl" firstAttribute="top" secondItem="C1A-QR-PBs" secondAttribute="bottom" constant="15" id="C4l-fO-KWA"/>
+                            <constraint firstItem="Hb4-lP-KGt" firstAttribute="centerY" secondItem="BrR-z2-JeN" secondAttribute="centerY" id="Fbf-Zk-6RA"/>
+                            <constraint firstItem="BrR-z2-JeN" firstAttribute="top" secondItem="hlF-Pa-EFR" secondAttribute="top" constant="10" id="IpJ-Kr-U8n"/>
+                            <constraint firstAttribute="trailing" secondItem="izD-Qr-vRl" secondAttribute="trailing" constant="15" id="TND-za-0gf"/>
+                            <constraint firstItem="Hb4-lP-KGt" firstAttribute="leading" secondItem="BrR-z2-JeN" secondAttribute="trailing" constant="4" id="Tsv-7q-0ii"/>
+                            <constraint firstItem="izD-Qr-vRl" firstAttribute="leading" secondItem="BrR-z2-JeN" secondAttribute="leading" id="XeK-TK-XUX"/>
+                            <constraint firstItem="C1A-QR-PBs" firstAttribute="leading" secondItem="hlF-Pa-EFR" secondAttribute="leading" constant="15" id="dIx-cs-17y"/>
+                            <constraint firstAttribute="bottom" secondItem="izD-Qr-vRl" secondAttribute="bottom" constant="12" id="dqg-ls-jxA"/>
+                            <constraint firstItem="BrR-z2-JeN" firstAttribute="leading" secondItem="hlF-Pa-EFR" secondAttribute="leading" constant="15" id="kLt-Nw-tsb"/>
+                            <constraint firstAttribute="trailing" secondItem="C1A-QR-PBs" secondAttribute="trailing" constant="15" id="p2Z-Tj-EoJ"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetWidth">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetHeight">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="CornerRaduis">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.40000000000000002"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hlF-Pa-EFR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="8zq-xU-edL"/>
+                    <constraint firstAttribute="trailing" secondItem="hlF-Pa-EFR" secondAttribute="trailing" id="KW8-w1-2jD"/>
+                    <constraint firstAttribute="bottom" secondItem="hlF-Pa-EFR" secondAttribute="bottom" id="Wr5-7J-p0x"/>
+                    <constraint firstItem="hlF-Pa-EFR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="XoD-VA-Dcb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="collectionHeightConstraint" destination="Kes-ds-3a5" id="EgR-eQ-WPQ"/>
+                <outlet property="mCollectionView" destination="C1A-QR-PBs" id="Fwa-bo-jlR"/>
+                <outlet property="specialField" destination="izD-Qr-vRl" id="sEd-aZ-ic3"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="193.86160714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="BackgroundColor">
+            <color red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

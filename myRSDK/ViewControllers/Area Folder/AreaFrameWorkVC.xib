@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Segoe UI Bold.ttf">
+            <string>SegoeUI-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AreaFrameWorkVC" customModule="myRSDK" customModuleProvider="target">
+            <connections>
+                <outlet property="dismissBtn" destination="B3o-eY-42J" id="Mme-G6-HnW"/>
+                <outlet property="mTableView" destination="F2v-mt-Nuy" id="Ujn-pK-u9L"/>
+                <outlet property="searchEditText" destination="NB5-dv-0hE" id="pmu-4Q-xDd"/>
+                <outlet property="view" destination="iN0-l3-epB" id="ddf-9x-oAc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="F2v-mt-Nuy">
+                    <rect key="frame" x="15" y="128" width="340" height="529"/>
+                    <color key="backgroundColor" name="BackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="TY8-sV-diE"/>
+                        <outlet property="delegate" destination="-1" id="ROI-BK-kec"/>
+                    </connections>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Area" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zvJ-j2-ajm" customClass="LabelFont" customModule="myRSDK" customModuleProvider="target">
+                    <rect key="frame" x="15" y="35" width="104.5" height="21"/>
+                    <fontDescription key="fontDescription" name="SegoeUI-Bold" family="Segoe UI" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="FontSize">
+                            <real key="value" value="18"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NB5-dv-0hE">
+                    <rect key="frame" x="15" y="73" width="340" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="QU6-F9-LAU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B3o-eY-42J">
+                    <rect key="frame" x="330" y="33" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="dvc-sE-P9s"/>
+                        <constraint firstAttribute="width" constant="25" id="hQb-hr-FKd"/>
+                    </constraints>
+                    <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" image="Close"/>
+                    <connections>
+                        <action selector="dismissAction:" destination="-1" eventType="touchUpInside" id="qpv-yV-OxA"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" name="BackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="B3o-eY-42J" secondAttribute="trailing" constant="20" id="Hm1-g1-Exl"/>
+                <constraint firstItem="F2v-mt-Nuy" firstAttribute="trailing" secondItem="NB5-dv-0hE" secondAttribute="trailing" id="RoU-qT-1yR"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="F2v-mt-Nuy" secondAttribute="bottom" constant="10" id="TtL-gS-HNl"/>
+                <constraint firstItem="B3o-eY-42J" firstAttribute="centerY" secondItem="zvJ-j2-ajm" secondAttribute="centerY" id="UKz-5z-dcJ"/>
+                <constraint firstItem="NB5-dv-0hE" firstAttribute="trailing" secondItem="B3o-eY-42J" secondAttribute="trailing" id="ZQj-tU-jKm"/>
+                <constraint firstItem="NB5-dv-0hE" firstAttribute="leading" secondItem="zvJ-j2-ajm" secondAttribute="leading" id="c39-av-EgC"/>
+                <constraint firstItem="F2v-mt-Nuy" firstAttribute="top" secondItem="NB5-dv-0hE" secondAttribute="bottom" constant="15" id="cMb-Ae-qzn"/>
+                <constraint firstItem="F2v-mt-Nuy" firstAttribute="leading" secondItem="NB5-dv-0hE" secondAttribute="leading" id="f4C-jZ-G1g"/>
+                <constraint firstItem="zvJ-j2-ajm" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="35" id="fcn-2u-Mni"/>
+                <constraint firstItem="zvJ-j2-ajm" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="pli-qG-H6O"/>
+                <constraint firstItem="NB5-dv-0hE" firstAttribute="top" secondItem="B3o-eY-42J" secondAttribute="bottom" constant="15" id="yZa-jM-5c2"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="132" y="115"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Close" width="30" height="30"/>
+        <namedColor name="BackgroundColor">
+            <color red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

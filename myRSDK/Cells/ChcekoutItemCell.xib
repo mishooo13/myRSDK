@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Segoe UI Bold.ttf">
+            <string>SegoeUI-Bold</string>
+        </array>
+        <array key="Segoe UI.ttf">
+            <string>SegoeUI</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChcekoutItemCell" rowHeight="52" id="KGk-i7-Jjw" customClass="ChcekoutItemCell" customModule="MyRes" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="52"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="51.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9GJ-ck-7hO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="51.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z0F-RM-vVz" customClass="LabelFont" customModule="MyRes" customModuleProvider="target">
+                                <rect key="frame" x="49" y="20" width="189" height="0.0"/>
+                                <fontDescription key="fontDescription" name="SegoeUI-Bold" family="Segoe UI" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="FontSize">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ktd-AY-fPA" customClass="LabelFont" customModule="MyRes" customModuleProvider="target">
+                                <rect key="frame" x="49" y="25" width="261" height="13.5"/>
+                                <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="13"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="FontSize">
+                                        <real key="value" value="13"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dAn-X7-WCL">
+                                <rect key="frame" x="49" y="44.5" width="261" height="1"/>
+                                <color key="backgroundColor" name="LineColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="KXs-0v-c1c"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mIl-HF-JDx" customClass="LabelFont" customModule="MyRes" customModuleProvider="target">
+                                <rect key="frame" x="15" y="20" width="34" height="0.0"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="34" id="RKh-OQ-D7J"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SegoeUI-Bold" family="Segoe UI" pointSize="16"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="FontSize">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="g1f-hH-HwQ" customClass="LabelFont" customModule="MyRes" customModuleProvider="target">
+                                <rect key="frame" x="248" y="20" width="60" height="0.0"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="AsJ-OJ-S4I"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SegoeUI-Bold" family="Segoe UI" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="FontSize">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="Gray"/>
+                        <constraints>
+                            <constraint firstItem="mIl-HF-JDx" firstAttribute="leading" secondItem="9GJ-ck-7hO" secondAttribute="leading" constant="15" id="09o-vN-Jug"/>
+                            <constraint firstItem="z0F-RM-vVz" firstAttribute="centerY" secondItem="mIl-HF-JDx" secondAttribute="centerY" id="3su-Mu-Jh3"/>
+                            <constraint firstItem="Ktd-AY-fPA" firstAttribute="leading" secondItem="z0F-RM-vVz" secondAttribute="leading" id="3wG-d9-H1Y"/>
+                            <constraint firstItem="dAn-X7-WCL" firstAttribute="leading" secondItem="Ktd-AY-fPA" secondAttribute="leading" id="437-gs-DLw"/>
+                            <constraint firstItem="dAn-X7-WCL" firstAttribute="top" secondItem="Ktd-AY-fPA" secondAttribute="bottom" constant="6" id="5zW-S5-u5p"/>
+                            <constraint firstItem="g1f-hH-HwQ" firstAttribute="leading" secondItem="z0F-RM-vVz" secondAttribute="trailing" constant="10" id="6Qz-Hl-6xr"/>
+                            <constraint firstItem="Ktd-AY-fPA" firstAttribute="top" secondItem="z0F-RM-vVz" secondAttribute="bottom" constant="5" id="Es9-oP-yfg"/>
+                            <constraint firstItem="mIl-HF-JDx" firstAttribute="top" secondItem="9GJ-ck-7hO" secondAttribute="top" constant="20" id="KpJ-O4-Or0"/>
+                            <constraint firstItem="z0F-RM-vVz" firstAttribute="leading" secondItem="mIl-HF-JDx" secondAttribute="trailing" id="RuY-gf-ajY"/>
+                            <constraint firstAttribute="bottom" secondItem="dAn-X7-WCL" secondAttribute="bottom" constant="6" id="k7A-8w-Q1I"/>
+                            <constraint firstAttribute="trailing" secondItem="Ktd-AY-fPA" secondAttribute="trailing" constant="10" id="ki1-rp-erL"/>
+                            <constraint firstItem="dAn-X7-WCL" firstAttribute="trailing" secondItem="Ktd-AY-fPA" secondAttribute="trailing" id="r4h-Kv-4k7"/>
+                            <constraint firstAttribute="trailing" secondItem="g1f-hH-HwQ" secondAttribute="trailing" constant="12" id="uXL-gV-Inx"/>
+                            <constraint firstItem="g1f-hH-HwQ" firstAttribute="centerY" secondItem="z0F-RM-vVz" secondAttribute="centerY" id="yJm-AV-H6q"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="9GJ-ck-7hO" secondAttribute="trailing" id="7N3-bM-BjZ"/>
+                    <constraint firstAttribute="bottom" secondItem="9GJ-ck-7hO" secondAttribute="bottom" id="Ex8-KQ-rhg"/>
+                    <constraint firstItem="9GJ-ck-7hO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="GGn-AU-eA2"/>
+                    <constraint firstItem="9GJ-ck-7hO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="KRU-6Y-sWQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="detailsLabel" destination="Ktd-AY-fPA" id="jwJ-Au-iel"/>
+                <outlet property="itemName" destination="z0F-RM-vVz" id="o0o-bO-vhr"/>
+                <outlet property="itemQuantity" destination="mIl-HF-JDx" id="EJU-CR-Luc"/>
+                <outlet property="totalPriceLabel" destination="g1f-hH-HwQ" id="LHG-il-miW"/>
+            </connections>
+            <point key="canvasLocation" x="24" y="58.47076461769116"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="Gray">
+            <color red="0.98431372549019602" green="0.98431372549019602" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LineColor">
+            <color red="0.8901960784313725" green="0.8901960784313725" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

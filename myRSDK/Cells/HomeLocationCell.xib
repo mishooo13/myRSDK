@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Segoe UI Bold.ttf">
+            <string>SegoeUI-Bold</string>
+        </array>
+        <array key="Segoe UI.ttf">
+            <string>SegoeUI</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeLocationCell" id="gTV-IL-0wX" customClass="HomeLocationCell" customModule="MyRes" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="338" height="98"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="338" height="98"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZiT-pH-OAD">
+                        <rect key="frame" x="0.0" y="0.0" width="338" height="98"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delivering to" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hli-sr-44a" customClass="LabelFont" customModule="MyRes" customModuleProvider="target">
+                                <rect key="frame" x="25" y="11.5" width="293" height="21.5"/>
+                                <fontDescription key="fontDescription" name="SegoeUI-Bold" family="Segoe UI" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="FontSize">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YbU-8B-SMv">
+                                <rect key="frame" x="25" y="38" width="293" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p35-fP-fFi" customClass="LabelFont" customModule="MyRes" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="15.5" width="245" height="19"/>
+                                        <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="FontSize">
+                                                <real key="value" value="16"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dropdown" translatesAutoresizingMaskIntoConstraints="NO" id="D9P-hn-dnb">
+                                        <rect key="frame" x="265" y="15" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="iwU-D0-akH"/>
+                                            <constraint firstAttribute="width" constant="20" id="r3D-Pi-yXG"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sBr-VN-7lx">
+                                        <rect key="frame" x="0.0" y="0.0" width="293" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="locationAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="ppY-6J-ZMZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" name="BackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="5Rt-UB-Suo"/>
+                                    <constraint firstAttribute="trailing" secondItem="sBr-VN-7lx" secondAttribute="trailing" id="7ns-o0-wwQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="sBr-VN-7lx" secondAttribute="bottom" id="F3V-Wl-NvM"/>
+                                    <constraint firstItem="D9P-hn-dnb" firstAttribute="leading" secondItem="p35-fP-fFi" secondAttribute="trailing" constant="10" id="MyH-vi-s7Y"/>
+                                    <constraint firstItem="sBr-VN-7lx" firstAttribute="leading" secondItem="YbU-8B-SMv" secondAttribute="leading" id="Ofq-0t-Iz4"/>
+                                    <constraint firstItem="sBr-VN-7lx" firstAttribute="top" secondItem="YbU-8B-SMv" secondAttribute="top" id="RgR-Up-7rb"/>
+                                    <constraint firstItem="p35-fP-fFi" firstAttribute="leading" secondItem="YbU-8B-SMv" secondAttribute="leading" constant="10" id="YBk-D6-GGh"/>
+                                    <constraint firstAttribute="trailing" secondItem="D9P-hn-dnb" secondAttribute="trailing" constant="8" id="oNb-3g-78D"/>
+                                    <constraint firstItem="D9P-hn-dnb" firstAttribute="centerY" secondItem="YbU-8B-SMv" secondAttribute="centerY" id="vls-67-zao"/>
+                                    <constraint firstItem="p35-fP-fFi" firstAttribute="centerY" secondItem="YbU-8B-SMv" secondAttribute="centerY" id="z4k-cM-dLN"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="BorderColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="BorderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="CornerRaduis">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" name="BackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YbU-8B-SMv" firstAttribute="top" secondItem="Hli-sr-44a" secondAttribute="bottom" constant="5" id="An4-3h-Qie"/>
+                            <constraint firstItem="Hli-sr-44a" firstAttribute="top" secondItem="ZiT-pH-OAD" secondAttribute="top" constant="11.5" id="CxO-IO-u8H"/>
+                            <constraint firstItem="YbU-8B-SMv" firstAttribute="leading" secondItem="Hli-sr-44a" secondAttribute="leading" id="UPE-FF-8A9"/>
+                            <constraint firstItem="YbU-8B-SMv" firstAttribute="trailing" secondItem="Hli-sr-44a" secondAttribute="trailing" id="c95-Qo-acf"/>
+                            <constraint firstItem="Hli-sr-44a" firstAttribute="leading" secondItem="ZiT-pH-OAD" secondAttribute="leading" constant="25" id="lGa-w3-WpG"/>
+                            <constraint firstAttribute="trailing" secondItem="Hli-sr-44a" secondAttribute="trailing" constant="20" id="tS3-Iy-CjY"/>
+                            <constraint firstAttribute="bottom" secondItem="YbU-8B-SMv" secondAttribute="bottom" constant="10" id="vIx-xW-HVl"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="CornerRaduis">
+                                <real key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="ZiT-pH-OAD" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="0a7-lH-hRW"/>
+                <constraint firstAttribute="bottom" secondItem="ZiT-pH-OAD" secondAttribute="bottom" id="eiY-sb-T02"/>
+                <constraint firstItem="ZiT-pH-OAD" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="m3f-s4-dsf"/>
+                <constraint firstAttribute="trailing" secondItem="ZiT-pH-OAD" secondAttribute="trailing" id="yAd-60-tXx"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="338" height="98"/>
+            <connections>
+                <outlet property="titleLabel" destination="p35-fP-fFi" id="fWD-wC-PkY"/>
+            </connections>
+            <point key="canvasLocation" x="100.00000000000001" y="55.580357142857139"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="dropdown" width="30" height="30"/>
+        <namedColor name="BackgroundColor">
+            <color red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

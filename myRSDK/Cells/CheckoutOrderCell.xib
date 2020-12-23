@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CheckoutOrderCell" rowHeight="343" id="KGk-i7-Jjw" customClass="CheckoutOrderCell" customModule="MyRes" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="343"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="343"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OgU-4E-gm9">
+                        <rect key="frame" x="1" y="1" width="318" height="341"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="4u4-dD-8V5">
+                                <rect key="frame" x="25" y="20" width="268" height="191"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C24-Ig-C4I">
+                                        <rect key="frame" x="0.0" y="0.0" width="268" height="35"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtotal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fpp-7x-GGd" customClass="LabelFont" customModule="MyRes" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="7.5" width="64" height="20"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="FontSize">
+                                                        <real key="value" value="17"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tze-CH-8ZC" customClass="LabelFont" customModule="MyRes" customModuleProvider="target">
+                                                <rect key="frame" x="268" y="17.5" width="0.0" height="0.0"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="FontSize">
+                                                        <real key="value" value="18"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="tze-CH-8ZC" firstAttribute="centerY" secondItem="Fpp-7x-GGd" secondAttribute="centerY" id="Cv4-5p-djr"/>
+                                            <constraint firstAttribute="height" constant="35" id="Q8I-ck-Kud"/>
+                                            <constraint firstAttribute="trailing" secondItem="tze-CH-8ZC" secondAttribute="trailing" id="kyq-WR-TsQ"/>
+                                            <constraint firstItem="Fpp-7x-GGd" firstAttribute="centerY" secondItem="C24-Ig-C4I" secondAttribute="centerY" id="m4Q-Gg-njx"/>
+                                            <constraint firstItem="Fpp-7x-GGd" firstAttribute="leading" secondItem="C24-Ig-C4I" secondAttribute="leading" id="sxn-aq-aK3"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fvi-Bo-20P">
+                                        <rect key="frame" x="0.0" y="39" width="268" height="35"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delivery fee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KHH-Sj-0fV" customClass="LabelFont" customModule="MyRes" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="7.5" width="88.5" height="20"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="NO"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="FontSize">
+                                                        <real key="value" value="17"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kf0-C9-NEo" customClass="LabelFont" customModule="MyRes" customModuleProvider="target">
+                                                <rect key="frame" x="268" y="17.5" width="0.0" height="0.0"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="FontSize">
+                                                        <real key="value" value="18"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="KHH-Sj-0fV" firstAttribute="leading" secondItem="fvi-Bo-20P" secondAttribute="leading" id="0jl-4A-Vo7"/>
+                                            <constraint firstItem="KHH-Sj-0fV" firstAttribute="centerY" secondItem="fvi-Bo-20P" secondAttribute="centerY" id="MWA-Il-wxE"/>
+                                            <constraint firstAttribute="trailing" secondItem="kf0-C9-NEo" secondAttribute="trailing" id="iZh-xX-Re4"/>
+                                            <constraint firstItem="kf0-C9-NEo" firstAttribute="centerY" secondItem="KHH-Sj-0fV" secondAttribute="centerY" id="uQq-AF-gRC"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Srb-2F-I6O">
+                                        <rect key="frame" x="0.0" y="78" width="268" height="35"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VAT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="igA-mF-eRe" customClass="LabelFont" customModule="MyRes" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="7.5" width="29" height="20"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="NO"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="FontSize">
+                                                        <real key="value" value="17"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DMI-9H-quA" customClass="LabelFont" customModule="MyRes" customModuleProvider="target">
+                                                <rect key="frame" x="268" y="17.5" width="0.0" height="0.0"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="FontSize">
+                                                        <real key="value" value="18"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="DMI-9H-quA" firstAttribute="centerY" secondItem="igA-mF-eRe" secondAttribute="centerY" id="0je-6d-wEU"/>
+                                            <constraint firstAttribute="trailing" secondItem="DMI-9H-quA" secondAttribute="trailing" id="VLj-ff-8xH"/>
+                                            <constraint firstItem="igA-mF-eRe" firstAttribute="leading" secondItem="Srb-2F-I6O" secondAttribute="leading" id="Yax-93-xGn"/>
+                                            <constraint firstItem="igA-mF-eRe" firstAttribute="centerY" secondItem="Srb-2F-I6O" secondAttribute="centerY" id="x0U-9z-8IC"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bSz-4a-tEQ">
+                                        <rect key="frame" x="0.0" y="117" width="268" height="35"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coupon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xiw-jE-v32" customClass="LabelFont" customModule="MyRes" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="7.5" width="61" height="20"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                                                <color key="textColor" name="GreenColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="NO"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="FontSize">
+                                                        <real key="value" value="17"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KST-qg-b7D" customClass="LabelFont" customModule="MyRes" customModuleProvider="target">
+                                                <rect key="frame" x="268" y="17.5" width="0.0" height="0.0"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="18"/>
+                                                <color key="textColor" name="GreenColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="FontSize">
+                                                        <real key="value" value="18"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="KST-qg-b7D" secondAttribute="trailing" id="K7X-bc-Km0"/>
+                                            <constraint firstItem="Xiw-jE-v32" firstAttribute="leading" secondItem="bSz-4a-tEQ" secondAttribute="leading" id="RAi-gq-CLd"/>
+                                            <constraint firstItem="KST-qg-b7D" firstAttribute="centerY" secondItem="Xiw-jE-v32" secondAttribute="centerY" id="Xx0-sv-FYi"/>
+                                            <constraint firstItem="Xiw-jE-v32" firstAttribute="centerY" secondItem="bSz-4a-tEQ" secondAttribute="centerY" id="m4V-Db-KSX"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ohw-zn-MX9">
+                                        <rect key="frame" x="0.0" y="156" width="268" height="35"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grand total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JI4-FO-h7G" customClass="LabelFont" customModule="MyRes" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="7.5" width="85.5" height="20"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="FontSize">
+                                                        <real key="value" value="17"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4P-JY-Nhl" customClass="LabelFont" customModule="MyRes" customModuleProvider="target">
+                                                <rect key="frame" x="268" y="17.5" width="0.0" height="0.0"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="FontSize">
+                                                        <real key="value" value="18"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="JI4-FO-h7G" firstAttribute="leading" secondItem="Ohw-zn-MX9" secondAttribute="leading" id="BH7-7i-wv2"/>
+                                            <constraint firstItem="JI4-FO-h7G" firstAttribute="centerY" secondItem="Ohw-zn-MX9" secondAttribute="centerY" id="auf-26-J0a"/>
+                                            <constraint firstItem="Z4P-JY-Nhl" firstAttribute="centerY" secondItem="JI4-FO-h7G" secondAttribute="centerY" id="pFV-yj-8S8"/>
+                                            <constraint firstAttribute="trailing" secondItem="Z4P-JY-Nhl" secondAttribute="trailing" id="s66-q4-heE"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbp-dK-aPE" customClass="ButtonFont" customModule="MyRes" customModuleProvider="target">
+                                <rect key="frame" x="20" y="284.5" width="278" height="40"/>
+                                <color key="backgroundColor" name="GreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="l8w-TM-kkT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="17"/>
+                                <state key="normal" title="Check out">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="CornerRaduis">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetHeight">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.40000000000000002"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="FontSize">
+                                        <real key="value" value="17"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="placeOrderAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="sV6-ja-fns"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prices include VAT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BPP-GN-zKw" customClass="LabelFont" customModule="MyRes" customModuleProvider="target">
+                                <rect key="frame" x="25" y="226" width="268" height="43.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="FontSize">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4u4-dD-8V5" firstAttribute="leading" secondItem="OgU-4E-gm9" secondAttribute="leading" constant="25" id="7od-Ed-SLd"/>
+                            <constraint firstItem="BPP-GN-zKw" firstAttribute="trailing" secondItem="4u4-dD-8V5" secondAttribute="trailing" id="Aa7-Ir-0UB"/>
+                            <constraint firstAttribute="trailing" secondItem="4u4-dD-8V5" secondAttribute="trailing" constant="25" id="N9Y-nk-hvr"/>
+                            <constraint firstAttribute="bottom" secondItem="xbp-dK-aPE" secondAttribute="bottom" constant="16.5" id="VDd-4p-gt2"/>
+                            <constraint firstItem="xbp-dK-aPE" firstAttribute="top" secondItem="BPP-GN-zKw" secondAttribute="bottom" constant="15" id="Vo5-SN-Qte"/>
+                            <constraint firstAttribute="trailing" secondItem="xbp-dK-aPE" secondAttribute="trailing" constant="20" id="a6m-Ti-ENy"/>
+                            <constraint firstItem="xbp-dK-aPE" firstAttribute="leading" secondItem="OgU-4E-gm9" secondAttribute="leading" constant="20" id="aml-sz-TFf"/>
+                            <constraint firstItem="BPP-GN-zKw" firstAttribute="leading" secondItem="4u4-dD-8V5" secondAttribute="leading" id="bbd-y8-c09"/>
+                            <constraint firstItem="4u4-dD-8V5" firstAttribute="top" secondItem="OgU-4E-gm9" secondAttribute="top" constant="20" id="dYZ-gZ-QMm"/>
+                            <constraint firstItem="BPP-GN-zKw" firstAttribute="top" secondItem="4u4-dD-8V5" secondAttribute="bottom" constant="15" id="pyv-Zm-y7r"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="BorderColor">
+                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="BorderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="OgU-4E-gm9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="1" id="3eV-e9-bnK"/>
+                    <constraint firstAttribute="trailing" secondItem="OgU-4E-gm9" secondAttribute="trailing" constant="1" id="BhF-LG-QrW"/>
+                    <constraint firstItem="OgU-4E-gm9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="1" id="SbM-iT-fQn"/>
+                    <constraint firstAttribute="bottom" secondItem="OgU-4E-gm9" secondAttribute="bottom" constant="1" id="XEe-yS-DVS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" name="Gray"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="AmountPriceLabel" destination="Z4P-JY-Nhl" id="4SV-AW-jLq"/>
+                <outlet property="couponLabel" destination="Xiw-jE-v32" id="M3e-TT-kKH"/>
+                <outlet property="couponValueLabel" destination="KST-qg-b7D" id="qq3-G1-ibs"/>
+                <outlet property="couponView" destination="bSz-4a-tEQ" id="Eyi-ng-XPN"/>
+                <outlet property="deliveryFeeLabel" destination="kf0-C9-NEo" id="yZk-e7-yeL"/>
+                <outlet property="deliveryFeeView" destination="fvi-Bo-20P" id="7RP-a1-eoJ"/>
+                <outlet property="deliveryTitleLabel" destination="KHH-Sj-0fV" id="SEO-0C-7nU"/>
+                <outlet property="placeOrderBtn" destination="xbp-dK-aPE" id="T7f-H1-hmZ"/>
+                <outlet property="subView" destination="OgU-4E-gm9" id="Kxs-LC-8R4"/>
+                <outlet property="taxLabel" destination="DMI-9H-quA" id="1Su-Y7-bpX"/>
+                <outlet property="taxView" destination="Srb-2F-I6O" id="Odl-au-FnY"/>
+                <outlet property="totalPriceLabel" destination="tze-CH-8ZC" id="6mV-NY-XLO"/>
+                <outlet property="vatText" destination="BPP-GN-zKw" id="XXf-KI-UoC"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="179.79910714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="Gray">
+            <color red="0.98431372549019602" green="0.98431372549019602" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="GreenColor">
+            <color red="0.42352941176470588" green="0.74117647058823533" blue="0.27058823529411763" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

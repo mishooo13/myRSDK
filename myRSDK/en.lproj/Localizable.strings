@@ -1,0 +1,117 @@
+/*
+  Localizable.strings
+  MyRes
+
+  Created by Other Logic on 12/11/19.
+  Copyright © 2019 Other Logic. All rights reserved.
+*/
+"my_res" = "Myres";
+
+"yes" = "Yes";
+"no" = "No";
+"ok" = "OK";
+"done" = "Done";
+"wrong" = "Wrong";
+"warning" = "Warning";
+"submit" = "Submit";
+"wrong_email_or_password" = "Invalid email or Password";
+"cancel" = "Cancel";
+"wrong_message" = "Something wrong happedend please try again";
+
+"minimum_password_length" = "Passwords  must be at least 6 characters";
+"invalid_mobile" = "Invalid mobile number";
+"empty_data_message" = "is empty please fill it";
+"email_input_matching" = "Please enter valid email";
+"firstname" = "First name";
+"lastname" = "Last name";
+"name" = "User name";
+"dupicate_email" = "Email is already member before please login it";
+"dupicate_mobile" = "Mobile is already member before please login it";
+
+"price_start" = "From";
+
+"choose_food" = "Choose Food";
+"fast_delivery" = "Fast Delivery";
+"tracking_order" = "Tracking Order";
+
+"minium_order" = "Minium order";
+
+"floor" = "Floor";
+
+"order_number" = "Order Number:";
+
+
+"male" = "Male";
+"female" = "Female";
+
+"choose_address" = "Choose Address";
+"choose_branch" = "Choose Branch";
+
+"address_success" = "Address Added Successfully";
+
+"update_success" = "Updated Successfully";
+
+"rate_success" = "Thank you";
+
+"cash" = "Cash";
+"visa" = "Visa";
+"pickup" = "PickUp";
+
+"extra" = "Extra";
+
+"size" = "Size";
+
+"option_choose" = "Choose";
+"address_pickup" = "Please chosse Address or Pickup";
+"payment_choose" = "Please chosse Payment method";
+
+"area_choose" = "You should choose the area you want to delivery";
+
+"terms" = "Terms And conditions";
+"privacy" = "Privacy policy";
+"refund" = "Refund policy";
+
+"invalid_coupon" = "Invalid Coupon Code";
+
+"quatity_error" = "You should at least choose one";
+
+"price_error" = "You should choose at least one size";
+
+"option_required" = "Please choose the requried field";
+"size_requried" = "Please choose size of item";
+
+"order_success" = "Your order is success check your cart";
+"fields_required" = "Please fill all fields";
+
+
+"loading" = "Loading";
+"empty_item" = "Empty Items";
+"empty_favorite" = "Empty favorites";
+"empty_offers" = "Empty Offers";
+"empty_cart" = "Empty cart";
+"internet_failed" = "No connections are available";
+"pound" = "L.E.";
+"discount" = "Discount";
+"discount_complete" = "From Total price";
+"branchClose" = "Branch closed";
+"payment_failed" = "Payment not completed, try again";
+"remove" = "Remove";
+"add" = "Add";
+"add_promo" = "Enter promo code";
+"alert" = "Alert";
+"update_phone" = "To make order, we need your phone, please";
+"success" = "Success";
+"reorder_success" = "Re-Order Success and added to bag";
+"confirm_password" = "Passwords not compatible";
+
+
+"offers_message" = "Offers You Can`t Miss !";
+"menu_message" = "Discover Menu";
+"select_location" = "Select Location";
+
+"order_time" = "Please choose order time";
+"wrong_menu_ID" = "This item not valid with this area";
+
+
+"cart_change_area" = "Change area may change the prices";
+"cart_change" = "Items will delete from cart";

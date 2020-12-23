@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Segoe UI.ttf">
+            <string>SegoeUI</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AreaCell" rowHeight="52" id="KGk-i7-Jjw" customClass="AreaCell" customModule="myRSDK">
+            <rect key="frame" x="0.0" y="0.0" width="341" height="52"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="341" height="52"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DyT-r5-EEx">
+                        <rect key="frame" x="0.0" y="0.0" width="341" height="52"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2sd-Q4-x5H" customClass="LabelFont" customModule="myRSDK" customModuleProvider="target">
+                                <rect key="frame" x="20" y="15" width="271" height="21"/>
+                                <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="FontSize">
+                                        <real key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cy5-GE-ja0">
+                                <rect key="frame" x="20" y="50" width="306" height="1"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="IbM-4g-NuN"/>
+                                </constraints>
+                            </view>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checked.png" translatesAutoresizingMaskIntoConstraints="NO" id="JEn-fv-Soh">
+                                <rect key="frame" x="301" y="13.5" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="EUS-T9-6Ef"/>
+                                    <constraint firstAttribute="width" constant="25" id="cVG-yr-4RB"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" name="Gray"/>
+                        <constraints>
+                            <constraint firstItem="JEn-fv-Soh" firstAttribute="leading" secondItem="2sd-Q4-x5H" secondAttribute="trailing" constant="10" id="14C-Lv-UkR"/>
+                            <constraint firstAttribute="trailing" secondItem="JEn-fv-Soh" secondAttribute="trailing" constant="15" id="PUX-Or-rkK"/>
+                            <constraint firstItem="JEn-fv-Soh" firstAttribute="centerY" secondItem="DyT-r5-EEx" secondAttribute="centerY" id="PfE-Di-Zf9"/>
+                            <constraint firstItem="Cy5-GE-ja0" firstAttribute="top" secondItem="2sd-Q4-x5H" secondAttribute="bottom" constant="14" id="eMB-IH-s80"/>
+                            <constraint firstAttribute="bottom" secondItem="Cy5-GE-ja0" secondAttribute="bottom" constant="1" id="nAe-pq-lKw"/>
+                            <constraint firstItem="Cy5-GE-ja0" firstAttribute="trailing" secondItem="JEn-fv-Soh" secondAttribute="trailing" id="pxT-Br-JWz"/>
+                            <constraint firstItem="2sd-Q4-x5H" firstAttribute="top" secondItem="DyT-r5-EEx" secondAttribute="top" constant="15" id="uc2-nv-RAa"/>
+                            <constraint firstItem="Cy5-GE-ja0" firstAttribute="leading" secondItem="2sd-Q4-x5H" secondAttribute="leading" id="xWl-WC-SVZ"/>
+                            <constraint firstItem="2sd-Q4-x5H" firstAttribute="leading" secondItem="DyT-r5-EEx" secondAttribute="leading" constant="20" id="xkZ-dr-22P"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="DyT-r5-EEx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="EV3-KN-gZb"/>
+                    <constraint firstItem="DyT-r5-EEx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Hba-Ia-c8S"/>
+                    <constraint firstAttribute="bottom" secondItem="DyT-r5-EEx" secondAttribute="bottom" id="bm6-le-8bZ"/>
+                    <constraint firstAttribute="trailing" secondItem="DyT-r5-EEx" secondAttribute="trailing" id="rxj-O4-WeC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="areaLabel" destination="2sd-Q4-x5H" id="XIW-sg-weO"/>
+                <outlet property="checkedImage" destination="JEn-fv-Soh" id="AjD-oD-rse"/>
+            </connections>
+            <point key="canvasLocation" x="147.10144927536234" y="121.875"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="checked.png" width="75" height="75"/>
+        <namedColor name="Gray">
+            <color red="0.98431372549019602" green="0.98431372549019602" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

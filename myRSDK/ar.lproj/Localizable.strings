@@ -1,0 +1,118 @@
+/*
+ Localizable.strings
+ MyRes
+ 
+ Created by Other Logic on 12/11/19.
+ Copyright © 2019 Other Logic. All rights reserved.
+ */
+"my_res" = "Myres";
+
+"yes" = "نعم";
+"no" = "لا";
+"ok" = "تم";
+"wrong" = "خطأ";
+"warning" = "تحذير";
+"submit" = "تم";
+"done" = "تم";
+"wrong_email_or_password" = "البريد الالكتروني او كلمة المرور غير صحيحة";
+"cancel" = "إلغاء";
+"wrong_message" = "حدث خطا ما من فضلك حاول مرة اخري";
+
+"minimum_password_length" = "أقل عدد لعدد الكلمة السر هو 6";
+"invalid_mobile" = "من فضلك قم بادخال رقم موبايل صحيح";
+"empty_data_message" = " من فضلك قم بادخال ";
+"email_input_matching" = "من فضلك ادخل صيغة صحيحه للبريد الإلكترونى";
+"firstname" = "الإسم الاول";
+"lastname" = "الإسم الأخير";
+"name" = "الاسم";
+"dupicate_email" = "البريد الالكتروني مستخدم بالفعل";
+"dupicate_mobile" = "رقم الموبايل مسجل من قبل من فضلك قم بتسجيل الدخول";
+
+"price_start" = "يبدأ من";
+
+"choose_food" = "اختيار الطعام";
+"fast_delivery" = "توصيل سريع";
+"tracking_order" = "متابعة الطلب";
+
+"minium_order" = "الحد الادني للطلب";
+"floor" = "الطابق";
+
+"order_number" = "رقم الطلب:";
+
+"male" = "ذكر";
+"female" = "انثي";
+
+"choose_address" = "اختر عنوان";
+"choose_branch" = "اختر فرع";
+
+"terms" = "الشروط والاحكام";
+"privacy" = "سياسة الخصوصية";
+"refund" = "سياسة الاسترجاع";
+
+"address_success" = "تمت اضافة العنوان بنجاح";
+"payment_choose" = "من فضلك اختر نوع الدفع";
+"update_success" = "تمت تعديل البيانات بنجاح";
+
+"rate_success" = "شكرا لك";
+
+"cash" = "كاش";
+"visa" = "فيزا";
+"pickup" = "عند الحضور";
+
+"extra" = "الزيادات";
+
+"size" = "الحجم";
+
+"option_choose" = "اختر";
+"address_pickup" = "من فضلك قم ياختيار العنوان";
+
+"area_choose" = "من فضلك اختر المنطقة المراد التوصيل اليها";
+
+"invalid_coupon" = "كوبون كود خاطئ";
+
+"quatity_error" = "يجب ان تكون الكمية واحدة علي الاقل";
+
+"price_error" = "يجب ان تختار علي الاقل حجم";
+
+"option_required" = "من فضلك قم باختيار جميع المطلوب";
+"size_requried" = "من فضلك قم باختيار حجم الوجبة";
+
+
+"order_success" = "تمت بنجاح من فضلك قم بمراجعة الحقيبة";
+
+"fields_required" = "من فضلك قم بادخال جميع البيانات المطلوبة";
+
+
+
+"loading" = "تحميل ...";
+"empty_item" = "لا يوجد عناصر";
+"empty_favorite" = "لا يوجد تفضيلات";
+"empty_offers" = "لا يوجد عروض";
+"empty_cart" = "لا يوجد عناصر";
+"internet_failed" = "لا يوجد اتصال بالانترنت";
+"pound" = "جم";
+"discount" = "خصم";
+"discount_complete" = "من المجموع الكلي";
+"branchClose" = "الفرع مفلق الان";
+"payment_failed" = "عملية الدفع لم تكتمل حاول مرة اخري";
+"remove" = "حذف";
+"add" = "اضف";
+"add_promo" = "بروموكود";
+"alert" = "تنبيه";
+"update_phone" = "لانشاء طلب، من فضلك ادخل رقم الموبايل";
+"success" = "تمت بنجاح";
+"reorder_success" = "تمت عملية الطلب بنجاح من فضلك تابع الحقيبة";
+"confirm_password" = "كلمة المرور غير متطابقة";
+
+
+"offers_message" = "عروض لا يمكنك تفويتها!";
+"menu_message" = "اكتشف القائمة";
+
+"select_location" = "اختر الموقع";
+
+
+"order_time" = "من فضلك اختر ميعاد الاستلام";
+"wrong_menu_ID" = "هذا المنتج لا يوجد في هذه المنطقة";
+
+"cart_change_area" = "تغيير العنوان من الممكن يقوم بتغيير الاسعار";
+"cart_change" = "سوف نقوم بحذف حقيبة المشتريات";

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Segoe UI Bold.ttf">
+            <string>SegoeUI-Bold</string>
+        </array>
+        <array key="Segoe UI.ttf">
+            <string>SegoeUI</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BranchCell" rowHeight="74" id="KGk-i7-Jjw" customClass="BranchCell" customModule="MyRes" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="73.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GFz-Bb-QmC" customClass="LabelFont" customModule="MyRes" customModuleProvider="target">
+                        <rect key="frame" x="20" y="15" width="280" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="mgl-Jd-0Hk"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SegoeUI-Bold" family="Segoe UI" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="FontSize">
+                                <real key="value" value="17"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K9B-Rk-40m" customClass="LabelFont" customModule="MyRes" customModuleProvider="target">
+                        <rect key="frame" x="20" y="45" width="280" height="19.5"/>
+                        <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="NO"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="FontSize">
+                                <real key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n2b-uj-AMC">
+                        <rect key="frame" x="20" y="72.5" width="280" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="0wF-ue-LVI"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" name="BackgroundColor"/>
+                <constraints>
+                    <constraint firstItem="n2b-uj-AMC" firstAttribute="leading" secondItem="K9B-Rk-40m" secondAttribute="leading" id="3wq-a9-Gex"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="K9B-Rk-40m" secondAttribute="trailing" constant="4" id="8j3-bp-Uph"/>
+                    <constraint firstAttribute="bottom" secondItem="n2b-uj-AMC" secondAttribute="bottom" id="FMv-up-VZ3"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="GFz-Bb-QmC" secondAttribute="trailing" constant="4" id="KoT-vi-prV"/>
+                    <constraint firstItem="K9B-Rk-40m" firstAttribute="top" secondItem="GFz-Bb-QmC" secondAttribute="bottom" constant="8" id="Qel-k0-CYt"/>
+                    <constraint firstItem="K9B-Rk-40m" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="4" id="dgZ-jl-zEr"/>
+                    <constraint firstItem="n2b-uj-AMC" firstAttribute="trailing" secondItem="K9B-Rk-40m" secondAttribute="trailing" id="nWV-7l-0zQ"/>
+                    <constraint firstItem="GFz-Bb-QmC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="4" id="wrA-y2-TmF"/>
+                    <constraint firstItem="n2b-uj-AMC" firstAttribute="top" secondItem="K9B-Rk-40m" secondAttribute="bottom" constant="8" id="yyK-0d-5cv"/>
+                    <constraint firstItem="GFz-Bb-QmC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="4" id="zgX-IK-huH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="detailsLabel" destination="K9B-Rk-40m" id="T8U-NG-Dn5"/>
+                <outlet property="titleLabel" destination="GFz-Bb-QmC" id="agW-eA-2Gs"/>
+            </connections>
+            <point key="canvasLocation" x="32" y="118"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="BackgroundColor">
+            <color red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

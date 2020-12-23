@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CusinesCell" id="gTV-IL-0wX" customClass="CusinesCell" customModule="Prego" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="238" height="167"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="238" height="167"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C7g-QI-POq">
+                        <rect key="frame" x="0.0" y="0.0" width="238" height="167"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EVj-Sf-fRO">
+                                <rect key="frame" x="0.0" y="0.0" width="238" height="167"/>
+                            </imageView>
+                            <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="7vZ-8Q-4VW" customClass="CustomGradient" customModule="Prego" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="238" height="167"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ezp-Ob-tXn" customClass="LabelFont" customModule="Prego" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="152" width="218" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="FontSize">
+                                                <real key="value" value="19"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="ezp-Ob-tXn" firstAttribute="leading" secondItem="7vZ-8Q-4VW" secondAttribute="leading" constant="10" id="RFt-uq-Arb"/>
+                                    <constraint firstAttribute="trailing" secondItem="ezp-Ob-tXn" secondAttribute="trailing" constant="10" id="SeF-bU-Ojr"/>
+                                    <constraint firstAttribute="bottom" secondItem="ezp-Ob-tXn" secondAttribute="bottom" constant="15" id="q2Y-4r-Sc9"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="FirstColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="SecondColor">
+                                        <color key="value" red="0.051853950777202118" green="0.051853950777202118" blue="0.051853950777202118" alpha="0.69803587147887325" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="EVj-Sf-fRO" firstAttribute="top" secondItem="C7g-QI-POq" secondAttribute="top" id="3ee-Io-Q73"/>
+                            <constraint firstAttribute="bottom" secondItem="7vZ-8Q-4VW" secondAttribute="bottom" id="M0j-Jc-GRE"/>
+                            <constraint firstItem="EVj-Sf-fRO" firstAttribute="leading" secondItem="C7g-QI-POq" secondAttribute="leading" id="QTb-Rc-bge"/>
+                            <constraint firstAttribute="trailing" secondItem="7vZ-8Q-4VW" secondAttribute="trailing" id="Xtx-Si-Hab"/>
+                            <constraint firstItem="7vZ-8Q-4VW" firstAttribute="top" secondItem="C7g-QI-POq" secondAttribute="top" id="Xvg-9L-at2"/>
+                            <constraint firstAttribute="bottom" secondItem="EVj-Sf-fRO" secondAttribute="bottom" id="g4P-cR-ybI"/>
+                            <constraint firstAttribute="trailing" secondItem="EVj-Sf-fRO" secondAttribute="trailing" id="pJK-nF-JdC"/>
+                            <constraint firstItem="7vZ-8Q-4VW" firstAttribute="leading" secondItem="C7g-QI-POq" secondAttribute="leading" id="xfn-S8-3Lp"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="C7g-QI-POq" secondAttribute="bottom" id="2Wx-TI-v6v"/>
+                <constraint firstAttribute="trailing" secondItem="C7g-QI-POq" secondAttribute="trailing" id="9ge-1e-E8C"/>
+                <constraint firstItem="C7g-QI-POq" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Qg2-pe-EKs"/>
+                <constraint firstItem="C7g-QI-POq" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="sbB-cU-oFY"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="238" height="167"/>
+            <connections>
+                <outlet property="imageView" destination="EVj-Sf-fRO" id="Ief-SR-xpb"/>
+                <outlet property="titleLabel" destination="ezp-Ob-tXn" id="tKa-OL-n65"/>
+            </connections>
+            <point key="canvasLocation" x="119" y="110.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

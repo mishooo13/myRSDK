@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Segoe UI Bold.ttf">
+            <string>SegoeUI-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddressFrameVC" customModule="myRSDK" customModuleProvider="target">
+            <connections>
+                <outlet property="mTableView" destination="w2c-ME-YbM" id="Ctd-ea-w2c"/>
+                <outlet property="mView" destination="mkc-fG-fwg" id="SxG-na-7Zv"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mkc-fG-fwg">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="w2c-ME-YbM">
+                            <rect key="frame" x="0.0" y="47.5" width="414" height="848.5"/>
+                            <color key="backgroundColor" name="BackgroundColor"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="jIS-9y-XYq"/>
+                                <outlet property="delegate" destination="-1" id="1eL-Cw-zVy"/>
+                            </connections>
+                        </tableView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CYK-Vl-Mrb">
+                            <rect key="frame" x="374" y="12.5" width="25" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="HEQ-n0-imw"/>
+                                <constraint firstAttribute="width" constant="25" id="WJK-y7-LsF"/>
+                            </constraints>
+                            <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" image="Close"/>
+                            <connections>
+                                <action selector="dismissAction:" destination="-1" eventType="touchUpInside" id="BNW-DI-kSv"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A2y-Gy-ldP" customClass="LabelFont" customModule="MyRes" customModuleProvider="target">
+                            <rect key="frame" x="15" y="15" width="127" height="20"/>
+                            <fontDescription key="fontDescription" name="SegoeUI-Bold" family="Segoe UI" pointSize="17"/>
+                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="FontSize">
+                                    <real key="value" value="17"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" name="BackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="w2c-ME-YbM" firstAttribute="top" secondItem="CYK-Vl-Mrb" secondAttribute="bottom" constant="10" id="1me-ry-Jit"/>
+                        <constraint firstAttribute="trailing" secondItem="CYK-Vl-Mrb" secondAttribute="trailing" constant="15" id="Fus-Tf-n6q"/>
+                        <constraint firstItem="w2c-ME-YbM" firstAttribute="leading" secondItem="mkc-fG-fwg" secondAttribute="leading" id="GuJ-pU-DMM"/>
+                        <constraint firstItem="A2y-Gy-ldP" firstAttribute="leading" secondItem="mkc-fG-fwg" secondAttribute="leading" constant="15" id="HWo-OH-WA4"/>
+                        <constraint firstItem="A2y-Gy-ldP" firstAttribute="top" secondItem="mkc-fG-fwg" secondAttribute="top" constant="15" id="L1h-PW-j86"/>
+                        <constraint firstAttribute="trailing" secondItem="w2c-ME-YbM" secondAttribute="trailing" id="SkA-Hg-WWP"/>
+                        <constraint firstItem="CYK-Vl-Mrb" firstAttribute="centerY" secondItem="A2y-Gy-ldP" secondAttribute="centerY" id="VQh-yS-vsN"/>
+                        <constraint firstAttribute="bottom" secondItem="w2c-ME-YbM" secondAttribute="bottom" id="anU-rB-9b3"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" name="BackgroundColor"/>
+            <constraints>
+                <constraint firstItem="mkc-fG-fwg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="O6Q-yE-1su"/>
+                <constraint firstItem="mkc-fG-fwg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="o6C-5d-vOq"/>
+                <constraint firstAttribute="bottom" secondItem="mkc-fG-fwg" secondAttribute="bottom" id="rO5-rh-GzV"/>
+                <constraint firstAttribute="trailing" secondItem="mkc-fG-fwg" secondAttribute="trailing" id="vSl-m6-U6Y"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="132" y="115"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Close" width="30" height="30"/>
+        <namedColor name="BackgroundColor">
+            <color red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
