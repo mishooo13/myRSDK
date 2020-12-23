@@ -29,9 +29,6 @@ public class SplashVC: UIViewController {
             //NavigationManager.toLogin(self)
         })
         
-        
-        
-        
     }
     
     public init() {
